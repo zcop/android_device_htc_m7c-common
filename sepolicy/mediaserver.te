@@ -7,5 +7,4 @@ allow mediaserver self:netlink_kobject_uevent_socket create_socket_perms;
 allow mediaserver system_server:binder { call transfer };
 allow mediaserver system_server:unix_stream_socket { read write };
 allow system_server mediaserver:binder { call transfer };
-allow mediaserver diag_device:chr_file { open read write };
 binder_use(mediaserver);

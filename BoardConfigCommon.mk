@@ -55,12 +55,6 @@ BOARD_USES_QCOM_HARDWARE := true
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_LEGACY_ALSA_AUDIO := true
-BOARD_USES_FLUENCE_INCALL := true  # use DMIC in call only
-BOARD_USES_SEPERATED_AUDIO_INPUT := true  # use distinct voice recognition use case
-BOARD_USES_SEPERATED_FM := true # use distinct fm use cases
-BOARD_USES_SEPERATED_VOICE_SPEAKER := true  # use distinct voice speaker use case
-BOARD_USES_SEPERATED_VOIP := true  # use distinct VOIP use cases
-BOARD_HAVE_HTC_CSDCLIENT := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true

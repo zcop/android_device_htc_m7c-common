@@ -6,12 +6,15 @@ bin/mpdecision
 bin/radish
 bin/thermald
 
+bin/asound
 bin/ATFWD-daemon
 bin/hcheck
 bin/hci_qcomm_init
+bin/port-bridge
+bin/ptt_socket_app
+bin/qmiproxy
 
 # Graphics
-lib/libRSDriver.so
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -25,6 +28,7 @@ vendor/lib/libgsl.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libOpenCL.so
 vendor/lib/libsc-a3xx.so
+vendor/lib/libsc-a2xx.so
 
 # Configuration files
 etc/tfa/deftcoefA_l.speaker
@@ -94,6 +98,10 @@ etc/agps_rm
 etc/hldm.bin
 etc/hltof.bin
 etc/hltrd.bin
+etc/default_vol_level.conf
+etc/RT5501
+etc/sound_mfg.txt
+etc/sound_mfg_DMIC.txt
 
 # Audio
 lib/libacdbloader.so
@@ -101,6 +109,8 @@ lib/libaudcal.so
 lib/libcsd-client.so
 
 # Camera
+etc/ar0260_1
+etc/ov2722_1
 lib/hw/camera.msm8960.so
 lib/libBeautyChat.so
 lib/libcameraasd.so
@@ -136,6 +146,7 @@ lib/libchromatix_vd6869_hfr_60fps.so
 lib/libchromatix_vd6869_night.so
 lib/libchromatix_s5k6a1gx_preview.so
 lib/libchromatix_s5k6a1gx_default_video.so
+lib/libchromatix_s5k6a1gx_hdr.so
 lib/libchromatix_s5k6a1gx_hfr.so
 lib/libchromatix_s5k6a1gx_zsl.so
 lib/libchromatix_ov4688_preview.so
@@ -293,3 +304,6 @@ etc/firmware/dxhdcp2.mdt
 
 #NFC firmware
 vendor/firmware/libpn544_fw.so
+
+#Other
+etc/DxHDCP.cfg

@@ -132,9 +132,9 @@ void * write_dummy_data(void *param)
         .period_size = 960,
         .period_count = 8,
         .format = PCM_FORMAT_S16_LE,
-        .start_threshold = 960 / 4,
+        .start_threshold = 960/4,
         .stop_threshold = INT_MAX,
-        .avail_min = 960 / 4,
+        .avail_min = 960/4,
     };
 
     if (i2s_interface_en(true)) {
