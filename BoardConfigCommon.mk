@@ -40,14 +40,15 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
-# Flags
-COMMON_GLOBAL_CFLAGS += -DHTCLOG
+# Libc extensions
+BOARD_PROVIDES_ADDITIONAL_BIONIC_STATIC_LIBS += libc_htc_symbols
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80600000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=qcom user_debug=31 enforcing=0 androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
+TARGET_KERNEL_SOURCE := kernel/htc/m7c
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -55,6 +56,8 @@ BOARD_USES_QCOM_HARDWARE := true
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_LEGACY_ALSA_AUDIO := true
+AUDIO_FEATURE_ENABLED_FM := true
+AUDIO_FEATURE_ENABLED_HWDEP_CAL := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -87,7 +90,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_POWERHAL_VARIANT := qcom
 
 # RIL
-#BOARD_PROVIDES_LIBRIL := true
+BOARD_PROVIDES_LIBRIL := true
 
 # RPC
 TARGET_NO_RPC := true

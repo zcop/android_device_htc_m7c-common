@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dsp/snd_soc_msm/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
+    $(LOCAL_PATH)/dsp/snd_soc_msm/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/dsp/soundimage/srs_bypass.cfg:system/etc/soundimage/srs_bypass.cfg \
@@ -221,7 +221,7 @@ PRODUCT_PACKAGES += \
 
 # Keystore
 PRODUCT_PACKAGES += \
-    keystore.msm8974
+    keystore.msm8960
 
 # Thermal
 PRODUCT_COPY_FILES += \

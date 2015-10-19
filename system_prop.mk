@@ -3,11 +3,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.audio.fluence.mode=endfire \
 persist.audio.vr.enable=false \
 persist.audio.handset.mic=digital \
-persist.htc.audio.soundhound=1 \
-af.resampler.quality=255
+qcom.hw.aac.encoder=true \
+ro.qc.sdk.audio.fluencetype=fluence
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+	camera2.portability.force_api=1 \
     ro.cam.hw.version=m7
 
 # Display
@@ -35,7 +36,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.nfc.fw_download=true \
-    debug.nfc.fw_boot_download=false
+    debug.nfc.fw_boot_download=false \
+    debug.nfc.se=true \
+    ro.nfc.port=I2C
 
 #NITZ
 PRODUCT_PROPERTY_OVERRIDES += \
