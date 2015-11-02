@@ -58,6 +58,12 @@ BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_LEGACY_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_FM := true
 AUDIO_FEATURE_ENABLED_HWDEP_CAL := true
+BOARD_USES_FLUENCE_INCALL := true  # use DMIC in call only
+BOARD_USES_SEPERATED_AUDIO_INPUT := true  # use distinct voice recognition use case
+BOARD_USES_SEPERATED_FM := true # use distinct fm use cases
+BOARD_USES_SEPERATED_VOICE_SPEAKER := true  # use distinct voice speaker use case
+BOARD_USES_SEPERATED_VOIP := true  # use distinct VOIP use cases
+BOARD_HAVE_HTC_CSDCLIENT := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -73,6 +79,10 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
 
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+# GPS
+# BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
+TARGET_NO_RPC := true
 
 # Graphics
 TARGET_USES_ION := true
@@ -91,9 +101,6 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
-
-# RPC
-TARGET_NO_RPC := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true

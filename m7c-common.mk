@@ -126,8 +126,10 @@ PRODUCT_PACKAGES += \
     FMRecord
 
 # GPS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+PRODUCT_PACKAGES += \
+    gps.msm8960
+
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf
 
 
 # Graphics
@@ -252,6 +254,10 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# Other tools
+PRODUCT_PACKAGES += \
+    SpareParts
 
 # ADB unsecure
 ADDITIONAL_DEFAULT_PROPERTIES += \
